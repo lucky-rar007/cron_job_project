@@ -1,0 +1,1546 @@
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d')/channels('19%3Ab1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6%40thread.tacv2')/messages",
+  "@odata.count": 15,
+  "value": [
+    {
+      "id": "1751320800000",
+      "replyToId": null,
+      "etag": "1751320800000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-01T08:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-03T14:22:00.000Z",
+      "importance": "high",
+      "locale": "en-us",
+      "subject": "Production deployment - v2.14.0",
+      "from": {
+        "user": {
+          "id": "u-001-aidan-walsh",
+          "displayName": "Aidan Walsh"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Hey team, we're planning to deploy v2.14.0 to production this Wednesday at 10 PM UTC. This release includes the new payment gateway integration and the bulk export fix. Please make sure your feature branches are merged into main by EOD Tuesday. Tagging @DevOps to confirm the rollout window."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 6,
+      "replies": [
+        {
+          "id": "1751320800001",
+          "replyToId": "1751320800000",
+          "etag": "1751320800001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T08:45:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T08:45:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Confirmed from DevOps side. Deployment slot is reserved from 10 PM to 12 AM UTC. We'll have a rollback window open until 2 AM just in case."
+          }
+        },
+        {
+          "id": "1751320800002",
+          "replyToId": "1751320800000",
+          "etag": "1751320800002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T09:10:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T09:10:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "I'll have the payment gateway PR merged by end of today. Still need one more review pass on the Stripe webhook handler."
+          }
+        },
+        {
+          "id": "1751320800003",
+          "replyToId": "1751320800000",
+          "etag": "1751320800003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T11:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T11:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Can we push the cutoff to Wednesday morning? I have a hotfix for the CSV export character encoding bug that really should go in this release."
+          }
+        },
+        {
+          "id": "1751320800004",
+          "replyToId": "1751320800000",
+          "etag": "1751320800004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T13:05:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T13:05:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-001-aidan-walsh",
+              "displayName": "Aidan Walsh"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Sophie, okay — Wednesday 9 AM is the hard cutoff. Make sure it's reviewed and green on CI before then."
+          }
+        },
+        {
+          "id": "1751320800005",
+          "replyToId": "1751320800000",
+          "etag": "1751320800005",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T17:40:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T17:40:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "CSV fix is merged and CI is green. Also noticed a minor timezone offset issue in the export timestamps — included a one-line fix in the same PR."
+          }
+        },
+        {
+          "id": "1751320800006",
+          "replyToId": "1751320800000",
+          "etag": "1751320800006",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T14:22:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T14:22:00.000Z",
+          "importance": "high",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Deployment complete. All health checks passing. Payment gateway smoke tests passing. Monitoring for the next hour — so far so good."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751363600000",
+      "replyToId": null,
+      "etag": "1751363600000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-01T19:53:00.000Z",
+      "lastModifiedDateTime": "2026-07-02T08:10:00.000Z",
+      "importance": "urgent",
+      "locale": "en-us",
+      "subject": "ALERT: High error rate on /api/v2/orders",
+      "from": {
+        "user": {
+          "id": "u-005-datadog-bot",
+          "displayName": "Datadog Alerts"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "[P1 ALERT] Error rate on /api/v2/orders has exceeded 5% threshold. Current rate: 8.3% over last 5 minutes. Affected service: order-service-prod. Runbook: https://wiki.internal/runbooks/order-service"
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 5,
+      "replies": [
+        {
+          "id": "1751363600001",
+          "replyToId": "1751363600000",
+          "etag": "1751363600001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T19:57:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T19:57:00.000Z",
+          "importance": "urgent",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "On it. Checking logs now. Seeing a flood of 500s from the inventory-service dependency. Looks like their DB went read-only."
+          }
+        },
+        {
+          "id": "1751363600002",
+          "replyToId": "1751363600000",
+          "etag": "1751363600002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T20:04:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T20:04:00.000Z",
+          "importance": "urgent",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Confirmed — RDS replica promotion is in progress. ETA 8 minutes. I've enabled circuit breaker on order-service to stop the cascade."
+          }
+        },
+        {
+          "id": "1751363600003",
+          "replyToId": "1751363600000",
+          "etag": "1751363600003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T20:15:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T20:15:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Replica promoted. DB back to read-write. Disabling circuit breaker now. Error rate dropping."
+          }
+        },
+        {
+          "id": "1751363600004",
+          "replyToId": "1751363600000",
+          "etag": "1751363600004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-01T20:22:00.000Z",
+          "lastModifiedDateTime": "2026-07-01T20:22:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-005-datadog-bot",
+              "displayName": "Datadog Alerts"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "[RESOLVED] Error rate on /api/v2/orders has returned below threshold. Current rate: 0.4%. Duration of incident: 29 minutes."
+          }
+        },
+        {
+          "id": "1751363600005",
+          "replyToId": "1751363600000",
+          "etag": "1751363600005",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T08:10:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T08:10:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-001-aidan-walsh",
+              "displayName": "Aidan Walsh"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Good recovery last night team. Can someone write up a quick post-mortem? Main focus: why didn't our RDS multi-AZ failover kick in automatically?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751371200000",
+      "replyToId": null,
+      "etag": "1751371200000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-02T07:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-04T11:30:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": "Sprint 42 planning - agenda",
+      "from": {
+        "user": {
+          "id": "u-006-lena-brandt",
+          "displayName": "Lena Brandt"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Sprint 42 planning is tomorrow at 10 AM. I've updated the backlog in Jira. Top candidates for this sprint: (1) Notification service refactor, (2) OAuth2 PKCE support, (3) Admin audit log UI, (4) Rate limiting middleware. Please review and add your estimates before EOD today."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 4,
+      "replies": [
+        {
+          "id": "1751371200001",
+          "replyToId": "1751371200000",
+          "etag": "1751371200001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T08:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T08:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Estimated the OAuth2 PKCE item — I'd say 5 points. The auth library already supports it, we mainly need to update the client SDK and add the code_verifier flow to the login page."
+          }
+        },
+        {
+          "id": "1751371200002",
+          "replyToId": "1751371200000",
+          "etag": "1751371200002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T09:15:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T09:15:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Admin audit log UI is 8 points minimum — the backend endpoint isn't ready yet. Should we de-scope to just the API and do the UI in Sprint 43?"
+          }
+        },
+        {
+          "id": "1751371200003",
+          "replyToId": "1751371200000",
+          "etag": "1751371200003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T09:50:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T09:50:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-006-lena-brandt",
+              "displayName": "Lena Brandt"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Good call Sophie. I'll split the audit log ticket — API in 42, UI in 43. That keeps us under 34 points for the sprint."
+          }
+        },
+        {
+          "id": "1751371200004",
+          "replyToId": "1751371200000",
+          "etag": "1751371200004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T11:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T11:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-006-lena-brandt",
+              "displayName": "Lena Brandt"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Sprint 42 is now locked. Board is updated in Jira. Final scope: Notification refactor (8), OAuth2 PKCE (5), Audit log API (5), Rate limiting middleware (8), + 3 carry-overs from Sprint 41."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751385600000",
+      "replyToId": null,
+      "etag": "1751385600000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-02T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-02T11:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": null,
+      "from": {
+        "user": {
+          "id": "u-007-ryan-foster",
+          "displayName": "Ryan Foster"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Quick heads up — I've opened PR #847 for the rate limiting middleware. Uses a sliding window counter backed by Redis. Would appreciate a review from anyone familiar with the API gateway layer. Draft for now but should be ready for full review by EOD."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 3,
+      "replies": [
+        {
+          "id": "1751385600001",
+          "replyToId": "1751385600000",
+          "etag": "1751385600001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T14:20:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T14:20:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Left a few comments. Main concern: the Redis key expiry needs to be aligned with the window size or you'll get off-by-one errors under burst traffic. Otherwise looks solid."
+          }
+        },
+        {
+          "id": "1751385600002",
+          "replyToId": "1751385600000",
+          "etag": "1751385600002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T09:05:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T09:05:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-007-ryan-foster",
+              "displayName": "Ryan Foster"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Good catch Marcus — fixed the expiry alignment. Also added a unit test that simulates burst traffic at the window boundary. PR is now out of draft."
+          }
+        },
+        {
+          "id": "1751385600003",
+          "replyToId": "1751385600000",
+          "etag": "1751385600003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T11:45:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T11:45:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Approved. LGTM — nice work on the burst test. Merging."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751392800000",
+      "replyToId": null,
+      "etag": "1751392800000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-02T13:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-05T16:00:00.000Z",
+      "importance": "high",
+      "locale": "en-us",
+      "subject": "DB migration plan - users table schema changes",
+      "from": {
+        "user": {
+          "id": "u-004-sophie-chen",
+          "displayName": "Sophie Chen"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Sharing the migration plan for the users table changes needed for the audit log feature. We need to add: last_login_ip (varchar 45), mfa_enabled (bool default false), and failed_login_count (int default 0). Migration script is in /db/migrations/20260702_users_audit_fields.sql. Planning to run on staging this Thursday, prod next Monday. Any concerns?"
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 5,
+      "replies": [
+        {
+          "id": "1751392800001",
+          "replyToId": "1751392800000",
+          "etag": "1751392800001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T13:45:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T13:45:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Looks good. One note: users table has 2.1M rows on prod — the ALTER TABLE will lock for a few seconds even with ALGORITHM=INPLACE. Recommend running during the low-traffic window (2–4 AM UTC)."
+          }
+        },
+        {
+          "id": "1751392800002",
+          "replyToId": "1751392800000",
+          "etag": "1751392800002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-02T14:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-02T14:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Good point. I'll update the runbook to schedule at 2 AM UTC. Also switching to pt-online-schema-change to avoid the lock entirely — better safe."
+          }
+        },
+        {
+          "id": "1751392800003",
+          "replyToId": "1751392800000",
+          "etag": "1751392800003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T17:15:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T17:15:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Staging migration completed successfully. Took ~4 minutes via pt-osc with zero lock time. All queries returning expected results. App is green on staging."
+          }
+        },
+        {
+          "id": "1751392800004",
+          "replyToId": "1751392800000",
+          "etag": "1751392800004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T08:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T08:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-001-aidan-walsh",
+              "displayName": "Aidan Walsh"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Great. Approving the prod run for Monday 2 AM. Priya can you make sure DB snapshots are taken before the migration kicks off?"
+          }
+        },
+        {
+          "id": "1751392800005",
+          "replyToId": "1751392800000",
+          "etag": "1751392800005",
+          "messageType": "message",
+          "createdDateTime": "2026-07-05T16:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-05T16:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Pre-migration snapshot scheduled for Sunday 11 PM UTC. Automated health check configured to run after the migration. Will post results here Monday morning."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751436000000",
+      "replyToId": null,
+      "etag": "1751436000000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-03T01:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-03T01:00:00.000Z",
+      "importance": "urgent",
+      "locale": "en-us",
+      "subject": null,
+      "from": {
+        "user": {
+          "id": "u-005-datadog-bot",
+          "displayName": "Datadog Alerts"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "[P2 ALERT] auth-service response time p99 has exceeded 2000ms threshold. Current p99: 3,840ms. Service: auth-service-prod. Possible cause: token validation latency spike. Runbook: https://wiki.internal/runbooks/auth-service"
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 4,
+      "replies": [
+        {
+          "id": "1751436000001",
+          "replyToId": "1751436000000",
+          "etag": "1751436000001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T01:18:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T01:18:00.000Z",
+          "importance": "urgent",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Woken up by pager. Investigating. JWT public key cache is showing 0 hit rate — looks like a cache invalidation bug after last night's config push. Re-warming now."
+          }
+        },
+        {
+          "id": "1751436000002",
+          "replyToId": "1751436000000",
+          "etag": "1751436000002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T01:35:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T01:35:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Cache re-warmed. p99 dropping — now at 420ms. Root cause: the ConfigMap update last night cleared the in-memory key cache. Pushed a fix to pin the cache TTL independently of config reloads."
+          }
+        },
+        {
+          "id": "1751436000003",
+          "replyToId": "1751436000000",
+          "etag": "1751436000003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T01:42:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T01:42:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-005-datadog-bot",
+              "displayName": "Datadog Alerts"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "[RESOLVED] auth-service response time p99 has returned below threshold. Current p99: 310ms. Duration of incident: 42 minutes."
+          }
+        },
+        {
+          "id": "1751436000004",
+          "replyToId": "1751436000000",
+          "etag": "1751436000004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T09:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T09:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-001-aidan-walsh",
+              "displayName": "Aidan Walsh"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Thanks for the overnight response Marcus. Let's add a check to our config push pipeline that validates cache state post-deploy. Can you file a Jira ticket for that?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751450400000",
+      "replyToId": null,
+      "etag": "1751450400000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-03T05:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-03T05:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": null,
+      "from": {
+        "user": {
+          "id": "u-008-nina-patel",
+          "displayName": "Nina Patel"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Bug report from QA: on the new onboarding flow, when a user signs up with a Google OAuth account and then tries to link a GitHub account, they get a 409 Conflict. Repro steps: (1) Sign up via Google, (2) Go to Settings > Connected Accounts, (3) Click Connect GitHub. It fails every time. Ticket: ENG-2041."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 3,
+      "replies": [
+        {
+          "id": "1751450400001",
+          "replyToId": "1751450400000",
+          "etag": "1751450400001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T08:50:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T08:50:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Found it — the identity linking logic checks for unique email across providers, but Google and GitHub both return the same email so it throws a duplicate key error. This is a known edge case we missed in the spec. Fix is straightforward — need to key on provider+uid, not email."
+          }
+        },
+        {
+          "id": "1751450400002",
+          "replyToId": "1751450400000",
+          "etag": "1751450400002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T10:20:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T10:20:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "PR #851 is up. Refactors identity linking to use composite key (provider + uid). Also added integration tests covering all combinations of Google, GitHub, and email+password accounts."
+          }
+        },
+        {
+          "id": "1751450400003",
+          "replyToId": "1751450400000",
+          "etag": "1751450400003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T15:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T15:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-008-nina-patel",
+              "displayName": "Nina Patel"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Verified the fix on staging. All linked account scenarios pass. Marking ENG-2041 as resolved pending merge."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751464800000",
+      "replyToId": null,
+      "etag": "1751464800000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-03T09:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-03T09:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": "Code review request - notification service refactor",
+      "from": {
+        "user": {
+          "id": "u-007-ryan-foster",
+          "displayName": "Ryan Foster"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "PR #849 is ready for review — notification service refactor. Main changes: replaced direct SMTP calls with a queue-based worker, added retry logic with exponential backoff, and extracted templates into a separate /templates directory. It's ~800 lines of changes. I know it's big — happy to walk anyone through it on a call."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 2,
+      "replies": [
+        {
+          "id": "1751464800001",
+          "replyToId": "1751464800000",
+          "etag": "1751464800001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T10:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T10:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Starting review. Quick question: what's the dead-letter queue strategy when retries are exhausted? I don't see it handled in the worker."
+          }
+        },
+        {
+          "id": "1751464800002",
+          "replyToId": "1751464800000",
+          "etag": "1751464800002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-03T11:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-03T11:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-007-ryan-foster",
+              "displayName": "Ryan Foster"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Good catch — intentionally left as a follow-up ticket (ENG-2038) to keep this PR focused. After max retries, messages are currently logged and dropped. Agreed it needs a proper DLQ before we go to prod."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751472000000",
+      "replyToId": null,
+      "etag": "1751472000000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-03T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-03T11:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": null,
+      "from": {
+        "user": {
+          "id": "u-009-tom-harris",
+          "displayName": "Tom Harris"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Reminder that the GraphQL API deprecation notice for v1 endpoints goes out to customers this Friday. Make sure the v2 migration guide in the docs portal is updated and accurate before then. Checked it this morning and the authentication section is still showing the old API key header format."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 0,
+      "replies": []
+    },
+    {
+      "id": "1751544000000",
+      "replyToId": null,
+      "etag": "1751544000000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-04T07:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-06T09:45:00.000Z",
+      "importance": "high",
+      "locale": "en-us",
+      "subject": "Staging environment down - disk full",
+      "from": {
+        "user": {
+          "id": "u-002-priya-nair",
+          "displayName": "Priya Nair"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Staging is down. Root cause: /var/log partition hit 100% — looks like debug logging was left on after last week's troubleshooting session and rotated logs weren't being cleaned up. Clearing now. ETA 20 minutes to restore."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 4,
+      "replies": [
+        {
+          "id": "1751544000001",
+          "replyToId": "1751544000000",
+          "etag": "1751544000001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T07:25:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T07:25:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Staging is back. Cleared 18 GB of stale logs. Debug logging reverted to INFO level. Added a cron job to prune logs older than 7 days — this shouldn't happen again."
+          }
+        },
+        {
+          "id": "1751544000002",
+          "replyToId": "1751544000000",
+          "etag": "1751544000002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T08:05:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T08:05:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-001-aidan-walsh",
+              "displayName": "Aidan Walsh"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Thanks Priya. Can we also add a disk usage alert at 80% for all environments? I'd rather get notified early."
+          }
+        },
+        {
+          "id": "1751544000003",
+          "replyToId": "1751544000000",
+          "etag": "1751544000003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T09:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T09:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Added disk alert at 80% in Datadog for staging and prod. Also at 90% with a higher severity. Going out in the next monitoring deploy."
+          }
+        },
+        {
+          "id": "1751544000004",
+          "replyToId": "1751544000000",
+          "etag": "1751544000004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-06T09:45:00.000Z",
+          "lastModifiedDateTime": "2026-07-06T09:45:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Monitoring deploy went out this morning. All disk alerts active. Staging currently at 31% disk usage."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751558400000",
+      "replyToId": null,
+      "etag": "1751558400000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-04T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-04T11:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": null,
+      "from": {
+        "user": {
+          "id": "u-008-nina-patel",
+          "displayName": "Nina Patel"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "QA summary for the week ending July 4th: 14 tickets tested, 11 passed, 3 need rework. The 3 failures: ENG-2041 (linked accounts 409 — fix in progress), ENG-2035 (PDF export cuts off headers on page 2), ENG-2029 (timezone display wrong for UTC+5:30 users in the activity feed). ENG-2035 and ENG-2029 need owners assigned."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 2,
+      "replies": [
+        {
+          "id": "1751558400001",
+          "replyToId": "1751558400000",
+          "etag": "1751558400001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-04T12:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-04T12:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "I'll take ENG-2035. The PDF renderer uses a fixed page margin — I think the header collision is a known issue with the library version we're on. Will check if upgrading fixes it."
+          }
+        },
+        {
+          "id": "1751558400002",
+          "replyToId": "1751558400000",
+          "etag": "1751558400002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-05T09:15:00.000Z",
+          "lastModifiedDateTime": "2026-07-05T09:15:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-007-ryan-foster",
+              "displayName": "Ryan Foster"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Taking ENG-2029. The activity feed timestamps are stored in UTC but we're formatting them before applying the user's timezone offset. Classic mistake — will fix in the date utility module."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751630400000",
+      "replyToId": null,
+      "etag": "1751630400000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-05T07:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-07T10:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": "Prod DB migration completed - Monday 2 AM",
+      "from": {
+        "user": {
+          "id": "u-002-priya-nair",
+          "displayName": "Priya Nair"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Production migration for users table (adding last_login_ip, mfa_enabled, failed_login_count) completed successfully at 02:17 AM UTC. pt-osc ran for 11 minutes with no lock time observed. Post-migration health checks all green. No errors in app logs."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 3,
+      "replies": [
+        {
+          "id": "1751630400001",
+          "replyToId": "1751630400000",
+          "etag": "1751630400001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-05T08:15:00.000Z",
+          "lastModifiedDateTime": "2026-07-05T08:15:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-001-aidan-walsh",
+              "displayName": "Aidan Walsh"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Excellent work Priya and Sophie. Seamless migration."
+          }
+        },
+        {
+          "id": "1751630400002",
+          "replyToId": "1751630400000",
+          "etag": "1751630400002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-05T09:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-05T09:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Audit log API is unblocked now. Starting work on the endpoint this morning. Should have something on staging by Wednesday."
+          }
+        },
+        {
+          "id": "1751630400003",
+          "replyToId": "1751630400000",
+          "etag": "1751630400003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T10:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T10:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Audit log API is on staging. Endpoints: GET /api/v2/admin/audit-log with date range and actor filters. Paginated via cursor. Nina can you pick this up for QA when you get a chance?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751644800000",
+      "replyToId": null,
+      "etag": "1751644800000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-05T11:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-05T11:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": null,
+      "from": {
+        "user": {
+          "id": "u-009-tom-harris",
+          "displayName": "Tom Harris"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Heads up: one of our enterprise customers (Acme Corp) is reporting intermittent 401 errors when using their API keys. They say it started around Tuesday and happens roughly 1 in every 20 requests. Their key hasn't changed and it works fine when they test it manually. Ticket: CS-8812. Worth investigating before it escalates."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 5,
+      "replies": [
+        {
+          "id": "1751644800001",
+          "replyToId": "1751644800000",
+          "etag": "1751644800001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-05T11:45:00.000Z",
+          "lastModifiedDateTime": "2026-07-05T11:45:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Looking into this. 401s for Acme Corp's key are showing up in our API logs — they're being routed to api-gateway-node-3 and 4. Nodes 1 and 2 are fine. Suspecting the cache invalidation bug from Tuesday's auth incident may have affected key lookups on specific nodes."
+          }
+        },
+        {
+          "id": "1751644800002",
+          "replyToId": "1751644800000",
+          "etag": "1751644800002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-05T13:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-05T13:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Confirmed. Nodes 3 and 4 had a stale entry for Acme's key hash — pointing to a deleted key record that was never purged from the local cache. Manually invalidated the cache on both nodes. Their API calls should work now."
+          }
+        },
+        {
+          "id": "1751644800003",
+          "replyToId": "1751644800000",
+          "etag": "1751644800003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-05T13:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-05T13:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-009-tom-harris",
+              "displayName": "Tom Harris"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Acme confirmed it's working now. Thanks for the quick turnaround Marcus."
+          }
+        },
+        {
+          "id": "1751644800004",
+          "replyToId": "1751644800000",
+          "etag": "1751644800004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-06T08:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-06T08:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-001-aidan-walsh",
+              "displayName": "Aidan Walsh"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "This is the second cache issue in a week. Marcus, can you prioritize a proper cache invalidation strategy — ideally using a pub/sub broadcast so all nodes are consistent? Let's discuss in the architecture sync on Thursday."
+          }
+        },
+        {
+          "id": "1751644800005",
+          "replyToId": "1751644800000",
+          "etag": "1751644800005",
+          "messageType": "message",
+          "createdDateTime": "2026-07-06T09:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-06T09:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Agreed. I'll put together a design doc for a Redis pub/sub based invalidation approach before Thursday. Will share it here for async feedback."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751716800000",
+      "replyToId": null,
+      "etag": "1751716800000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-06T07:00:00.000Z",
+      "lastModifiedDateTime": "2026-07-06T07:00:00.000Z",
+      "importance": "normal",
+      "locale": "en-us",
+      "subject": null,
+      "from": {
+        "user": {
+          "id": "u-006-lena-brandt",
+          "displayName": "Lena Brandt"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "Sprint 41 retrospective notes are up in Confluence: https://confluence.internal/display/ENG/Sprint41-Retro. TL;DR — deployment pipeline is the top pain point (average 34 min build time), and we need better async communication around incident resolution. Both items have action owners. Please add comments or vote on the priority items before Friday."
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 2,
+      "replies": [
+        {
+          "id": "1751716800001",
+          "replyToId": "1751716800000",
+          "etag": "1751716800001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-06T08:45:00.000Z",
+          "lastModifiedDateTime": "2026-07-06T08:45:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-007-ryan-foster",
+              "displayName": "Ryan Foster"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "On the build time issue — I ran a profiling pass on the CI pipeline. The biggest culprit is the integration test suite: 22 minutes alone. Most of it is sequential DB setup. If we parallelize across 3 test workers we could get it under 10 minutes."
+          }
+        },
+        {
+          "id": "1751716800002",
+          "replyToId": "1751716800000",
+          "etag": "1751716800002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-06T10:20:00.000Z",
+          "lastModifiedDateTime": "2026-07-06T10:20:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-006-lena-brandt",
+              "displayName": "Lena Brandt"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "That's a significant win if we can pull it off. Ryan, can you spike this in Sprint 42? I'll add it to the board as a 3-pointer investigation task."
+          }
+        }
+      ]
+    },
+    {
+      "id": "1751785200000",
+      "replyToId": null,
+      "etag": "1751785200000",
+      "messageType": "message",
+      "createdDateTime": "2026-07-07T02:07:00.000Z",
+      "lastModifiedDateTime": "2026-07-07T02:07:00.000Z",
+      "importance": "urgent",
+      "locale": "en-us",
+      "subject": "ALERT: Memory usage critical on api-gateway-node-2",
+      "from": {
+        "user": {
+          "id": "u-005-datadog-bot",
+          "displayName": "Datadog Alerts"
+        }
+      },
+      "body": {
+        "contentType": "text",
+        "content": "[P1 ALERT] Memory usage on api-gateway-node-2 has exceeded 92% threshold. Current usage: 94.1% (7.5 GB / 8 GB). Service: api-gateway. Risk: OOM kill imminent. Runbook: https://wiki.internal/runbooks/api-gateway-memory"
+      },
+      "channelIdentity": {
+        "teamId": "a3b4c5d6-e7f8-4a2b-9c1d-0e2f3a4b5c6d",
+        "channelId": "19:b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6@thread.tacv2"
+      },
+      "replies@odata.count": 8,
+      "replies": [
+        {
+          "id": "1751785200001",
+          "replyToId": "1751785200000",
+          "etag": "1751785200001",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T02:12:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T02:12:00.000Z",
+          "importance": "urgent",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "On it. Draining traffic from node-2 to prevent OOM. Shifting load to nodes 1, 3, and 4."
+          }
+        },
+        {
+          "id": "1751785200002",
+          "replyToId": "1751785200000",
+          "etag": "1751785200002",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T02:18:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T02:18:00.000Z",
+          "importance": "urgent",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Traffic drained. Node-2 is out of rotation. Heap dump captured before restart. Restarting now."
+          }
+        },
+        {
+          "id": "1751785200003",
+          "replyToId": "1751785200000",
+          "etag": "1751785200003",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T02:25:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T02:25:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Node-2 restarted. Memory at 24%. Routing traffic back in gradually. Remaining nodes holding up fine — p99 is 290ms."
+          }
+        },
+        {
+          "id": "1751785200004",
+          "replyToId": "1751785200000",
+          "etag": "1751785200004",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T02:32:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T02:32:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-005-datadog-bot",
+              "displayName": "Datadog Alerts"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "[RESOLVED] Memory usage on api-gateway-node-2 has returned to normal. Current usage: 25.3%. Duration of incident: 25 minutes."
+          }
+        },
+        {
+          "id": "1751785200005",
+          "replyToId": "1751785200000",
+          "etag": "1751785200005",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T08:00:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T08:00:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Analyzed the heap dump. Found a memory leak in the request context middleware — connection objects are being retained after the request lifecycle ends. Looks like an event listener is not being removed on response close. Working on a fix."
+          }
+        },
+        {
+          "id": "1751785200006",
+          "replyToId": "1751785200000",
+          "etag": "1751785200006",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T09:15:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T09:15:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-003-marcus-obi",
+              "displayName": "Marcus Obi"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "PR #857 up. One-line fix: `res.on('close', cleanup)` was missing. Added a load test that runs 10k requests and checks for listener leaks — fails without the fix, passes with it."
+          }
+        },
+        {
+          "id": "1751785200007",
+          "replyToId": "1751785200000",
+          "etag": "1751785200007",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T10:05:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T10:05:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-004-sophie-chen",
+              "displayName": "Sophie Chen"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Reviewed and approved. Classic Node.js leak. Merging."
+          }
+        },
+        {
+          "id": "1751785200008",
+          "replyToId": "1751785200000",
+          "etag": "1751785200008",
+          "messageType": "message",
+          "createdDateTime": "2026-07-07T11:30:00.000Z",
+          "lastModifiedDateTime": "2026-07-07T11:30:00.000Z",
+          "importance": "normal",
+          "locale": "en-us",
+          "from": {
+            "user": {
+              "id": "u-002-priya-nair",
+              "displayName": "Priya Nair"
+            }
+          },
+          "body": {
+            "contentType": "text",
+            "content": "Fix deployed to all gateway nodes. Memory trending flat on all 4 nodes at 22–26% over the past 90 minutes. Monitoring for the rest of the day."
+          }
+        }
+      ]
+    }
+  ]
+}
