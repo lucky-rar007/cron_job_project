@@ -1,35 +1,50 @@
 import logging
+import sys
 from cron_job import simulate_cron_run
 
-# Configure logging with a simple format
+# Configure logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
+
 logger = logging.getLogger(__name__)
 
 
 def main():
     """
-    Main entry point demonstrating Milestone 4: pipeline orchestration and cron simulation.
+    Entry point for Teams ingestion pipeline.
 
-    Simulates a cron job running at 2026-07-04 00:00 IST.
-    The cron job processes the PREVIOUS day (2026-07-03).
+    Supports:
+    1. Default simulation run (hardcoded test date)
+    2. Custom date via CLI
     """
+
     logger.info("=" * 80)
     logger.info("TEAMS CHANNEL INGESTION - CRON SIMULATION")
     logger.info("=" * 80)
 
     try:
-        # Simulate cron run: current date is 2026-07-04, process 2026-07-03
-        current_date = '2026-07-04'
+        # -----------------------------
+        # Determine input date
+        # -----------------------------
+        if len(sys.argv) > 1:
+            current_date = sys.argv[1]
+            logger.info(f"Using CLI provided date: {current_date}")
+        else:
+            current_date = "2026-07-04"
+            logger.info(f"No CLI date provided. Using default: {current_date}")
 
         logger.info(f"\nSimulating cron job run at {current_date} 00:00 IST\n")
 
-        # Run the simulated cron job
+        # -----------------------------
+        # Run pipeline
+        # -----------------------------
         summary = simulate_cron_run(current_date)
 
-        # Print formatted summary
+        # -----------------------------
+        # Print summary
+        # -----------------------------
         logger.info("=" * 80)
         logger.info("CRON EXECUTION SUMMARY")
         logger.info("=" * 80)
@@ -42,11 +57,13 @@ def main():
 
     except FileNotFoundError as e:
         logger.error(f"File not found: {e}")
+
     except ValueError as e:
         logger.error(f"Invalid input: {e}")
+
     except Exception as e:
         logger.error(f"Unexpected error: {type(e).__name__}: {e}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
